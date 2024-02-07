@@ -1,0 +1,74 @@
+.wraper-box{
+	width: 400px;
+	height: 400px;
+	background-color: yellow;
+	position: relative;
+	transition: all 0.5s linear 0.2s;
+	box-shadow: 5px 10px 20px black;
+	border-radius: 10px;
+
+}
+
+.child-box{
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	transition: all 0.5s linear;
+
+}
+
+.wraper-box:hover{
+	background-color: blue;
+
+}
+
+.child-box:hover{
+	background-color: lightblue;
+	transform:translate(-50%, -50%) rotate(0deg);
+	
+}
+
+
+/*keyframe animation example*/
+
+
+
+.animation{
+	position: relative;
+}
+
+.cloud{
+	height: 100px;
+	animation: cloudanimationnew 5s infinite alternate;
+	position: absolute;
+/*	filter: blur(5px);*/
+}
+
+.cloud:hover{
+	opacity: 0.5;
+	transition: 0.5s linear ;
+	
+}
+
+
+/*@keyframes cloudanimation{
+	0% {left: 200px; transform: rotate(0deg);}
+	20% {left: 400px; transform: rotate(45deg);}
+	50% {left: 600px; transform: rotate(360deg);}
+	75% {left: 800px; transform: rotate(45deg);}
+	100% {left: 1000px; transform: rotate(360deg);}
+}
+*/
+
+@keyframes cloudanimationnew{
+	0% {transform: translateX(200px);}
+	20% {transform: translateX(400px);}
+	50% {transform: translateX(600px);}
+	75% {transform: translateX(800px);}
+	100% {transform: translateX(1000px);}
+}
+
